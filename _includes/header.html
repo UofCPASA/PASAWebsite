@@ -15,12 +15,13 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    {{ page.files }}
 
     <title>{{ site.title }} - {{ page.title }}</title>
 </head>
 
-<body>
-    <nav style="background: rgba(0,0,0,0.6);" class="navbar navbar-expand-md navbar-dark">
+<body style="background-image: url('{{ site.baseurl }}/resources/img/background.jpg')">
+    <nav style="background: rgba(0,0,0,0.6); font-size: 18px" class="navbar navbar-expand-md sticky-top navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" style="width: 13%" href="/">
             <img class="img-fluid" src="{{ site.baseurl }}/resources/img/logo.png">
