@@ -18,9 +18,17 @@
     {{ page.files }}
 
     <title>{{ site.title }} - {{ page.title }}</title>
+    <!-- Borrowed from http://stackoverflow.com/questions/15231812/random-background-images-css3 -->
+	<script>
+        $(document).ready(function () {
+        var images = ['background.jpg', 'background2.png', 'background3.jpg', 'background4.jpg'];
+        $('body').css({'background-image': 'url(/~physastr/resources/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+        });
+    </script>
+    
 </head>
 
-<body style="background-image: url('{{ site.baseurl }}/resources/img/background.jpg')">
+<body>
     <nav style="background: rgba(0,0,0,0.6); font-size: 18px" class="navbar navbar-expand-md sticky-top navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" style="width: 13%" href="{{ site.baseurl }}/">
