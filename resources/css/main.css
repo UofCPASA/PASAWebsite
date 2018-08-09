@@ -2,12 +2,24 @@
     background: rgba(131, 131, 131, 0.623); 
     border-radius: 2px; 
     margin-top: 15px;
-    margin-bottom: 0px;
-    height: 100%;
+    margin-bottom: 15px;
+    height: calc(100% - 15px);
 }
 .card {
     background-color: #6c757d;
+    padding-left: 5px;
 }
-.btn-secondary {
+body *, .btn-secondary {
     color: #212529
+}
+b {
+    display: contents;
+}
+@media (max-width: 991px) {
+    .jumbotron {
+        margin-bottom: 0px
+    }
+    #last {
+        margin-bottom: 15px;
+    }
 }
