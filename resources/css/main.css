@@ -24,11 +24,16 @@ body *, .btn-secondary {
 b {
     display: contents;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .jumbotron {
         margin-bottom: 0px
     }
     #last {
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 1199px) {
+    #sideButton {
         margin-bottom: 15px;
     }
 }
