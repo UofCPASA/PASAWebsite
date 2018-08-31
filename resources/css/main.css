@@ -24,6 +24,15 @@ body *, .btn-secondary {
 b {
     display: contents;
 }
+.dropdown-menu {
+    background-color: #6c757d;
+}
+.dropdown-item:hover {
+    background-color: #61686e;
+}
+.dropdown-item:active {
+    background-color: #787f86;
+}
 @media (max-width: 1199px) {
     .jumbotron {
         margin-bottom: 0px

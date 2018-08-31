@@ -15,18 +15,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    {{ page.files }}
+        crossorigin="anonymous"></script> {{ page.files }}
 
     <title>{{ site.title }} - {{ page.title }}</title>
     <!-- Borrowed from http://stackoverflow.com/questions/15231812/random-background-images-css3 -->
-	<script>
+    <script>
         $(document).ready(function () {
-        var images = ['background.jpg', 'background2.png', 'background3.jpg', 'background4.jpg'];
-        $('body').css({'background-image': 'url(/~physastr/resources/img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+            var images = ['background.jpg', 'background2.png', 'background3.jpg', 'background4.jpg'];
+            $('body').css({ 'background-image': 'url(/~physastr/resources/img/' + images[Math.floor(Math.random() * images.length)] + ')' });
         });
     </script>
-    
+
 </head>
 
 <body>
@@ -47,14 +46,36 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/tutoring">Peer Tutoring</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Peer Tutoring
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ site.baseurl }}/tutoring">Info</a>
+                        <a class="dropdown-item" href="#">Times</a>
+                        <a class="dropdown-item" href="#">Prices</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/conduct">Conduct</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Conduct
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ site.baseurl }}/conduct">General</a>
+                        <a class="dropdown-item" href="#">Cleaning</a>
+                        <a class="dropdown-item" href="#">PASA 'EULA'</a>
+                        <a class="dropdown-item" href="#">Club Constitution</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ site.baseurl }}/about">About Us</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="{{ site.baseurl }}/about">About Us</a>
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                        <a class="dropdown-item" href="#">Where to Find Us</a>
+                    </div>
                 </li>
             </ul>
         </div>
