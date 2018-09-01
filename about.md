@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About;
+title: About
 files: |
  <link href='/~physastr/resources/css/main.css' rel="stylesheet">
 ---
