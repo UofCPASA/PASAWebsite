@@ -1,10 +1,10 @@
 ---
 layout: default
-title: PASA 'EULA;
+title: EULA;
 files: |
  <link href='/~physastr/resources/css/main.css' rel="stylesheet">
 ---
-<h2 style="text-align: center">'EULA'</h2>
+<h2 style="text-align: center">EULA</h2>
 ---
 #### **End-User License Agreement - Physics and Astronomy Students’ Association October 3, 2011**
 
