@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Peer Tutoring
+title: Peer Tutoring Times
 files: |
  <link href='/~physastr/resources/css/main.css' rel="stylesheet">
 ---
